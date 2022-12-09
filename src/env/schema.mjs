@@ -8,7 +8,6 @@ import { z } from "zod";
 export const serverSchema = z.object({
   DATABASE_URL: z.string(),
   NODE_ENV: z.enum(["development", "test", "production"]),
-  AUTH0_BASE_URL: z.string(),
   AUTH0_ISSUER_BASE_URL: z.string(),
   AUTH0_CLIENT_ID: z.string(),
   AUTH0_CLIENT_SECRET: z.string(),
